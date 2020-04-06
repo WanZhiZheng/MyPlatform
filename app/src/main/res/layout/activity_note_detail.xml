@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/note_pic_detail"
+                android:src="@drawable/note"
+                android:paddingTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="120dp"
+                android:layout_height="120dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/book_name_detail"
+                    android:paddingLeft="10dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:textColor="#FFFFFF"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:gravity="center_vertical"/>
+                <ImageButton
+                    android:id="@+id/btn_edit"
+                    android:src="@android:drawable/ic_menu_edit"
+                    android:background="@color/colorAccent"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="550dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:text="笔记内容"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="25dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:src="@drawable/note_image" />
+
+                    <TextView
+                        android:id="@+id/english_detail"
+                        android:text="It's up to you"
+                        android:paddingLeft="15dp"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginLeft="50dp"
+                        android:layout_width="25dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/note_image"/>
+                    <TextView
+                        android:id="@+id/chinese_detail"
+                        android:text="这由你决定"
+                        android:paddingLeft="15dp"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:src="@drawable/note_image" />
+
+                    <TextView
+                        android:id="@+id/content_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:text="这是一个固定搭配，是中考的内容，意思为：由你决定。"
+                        android:textSize="20dp" />
+                </LinearLayout>
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:orientation="horizontal">-->
+                    <!--<ImageView-->
+                        <!--android:layout_marginLeft="50dp"-->
+                        <!--android:layout_width="25dp"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:src="@drawable/note_image"/>-->
+                    <!--<TextView-->
+                        <!--android:id="@+id/isbn_detail"-->
+                        <!--android:text="9787532297252"-->
+                        <!--android:paddingLeft="15dp"-->
+                        <!--android:textSize="20dp"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="50dp" />-->
+                <!--</LinearLayout>-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:text="信息"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginLeft="50dp"
+                        android:layout_width="25dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/note_image"/>
+                    <TextView
+                        android:id="@+id/isOK_detail"
+                        android:text="已掌握"
+                        android:paddingLeft="15dp"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginLeft="50dp"
+                        android:layout_width="25dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/note_image"/>
+                    <TextView
+                        android:id="@+id/produce_time_detail"
+                        android:text="2020-03-30"
+                        android:paddingLeft="15dp"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginLeft="50dp"
+                        android:layout_width="25dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/note_image"/>
+                    <TextView
+                        android:id="@+id/label_datail"
+                        android:text="长难句， 中考， 短语"
+                        android:paddingLeft="15dp"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp" />
+                </LinearLayout>
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:orientation="horizontal">-->
+                    <!--<ImageView-->
+                        <!--android:layout_marginLeft="50dp"-->
+                        <!--android:layout_width="25dp"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:src="@drawable/note_image"/>-->
+                    <!--<TextView-->
+                        <!--android:id="@+id/book_source_detail"-->
+                        <!--android:text="douban.com"-->
+                        <!--android:paddingLeft="15dp"-->
+                        <!--android:textSize="20dp"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="50dp" />-->
+                <!--</LinearLayout>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

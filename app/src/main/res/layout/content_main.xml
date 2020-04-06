@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="100dp"
+            android:layout_marginTop="250dp"
+            app:borderWidth="0dp"
+            app:backgroundTint="@color/white"
+            android:id="@+id/btn_go_to_translate"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="100dp"
+            android:src="@drawable/translate"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="Translate"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="100dp"
+            android:layout_marginTop="250dp"
+            app:borderWidth="0dp"
+            app:backgroundTint="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btn_notes"
+            android:layout_height="100dp"
+            android:src="@drawable/note"/>
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notes"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
